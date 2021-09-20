@@ -1,4 +1,4 @@
-.contacts__list {
+.contacts {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -23,8 +23,8 @@
   height: 16px;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
+  .contacts__link:hover &,
+  .contacts__link:focus & {
     fill: var(--accent-color);
   }
 }

@@ -1,4 +1,4 @@
-.clients__title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -8,7 +8,7 @@
   margin-bottom: 50px;
 }
 
-.clients__list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,8 +44,8 @@
   width: 106px;
   height: 60px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: var(--accent-color);
   }
 }

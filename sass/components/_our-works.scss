@@ -1,8 +1,8 @@
-.worcks {
+.section__works {
   padding-top: 0;
 }
 
-.worcks__title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -11,12 +11,13 @@
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
-.worcks__list {
+
+.works {
   display: flex;
   flex-basis: calc((100%-60px) / 3);
 }
 
-.worcks__item {
+.works__item {
   position: relative;
   &:not(:first-child) {
     margin-left: 30px;
