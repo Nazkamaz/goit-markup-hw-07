@@ -25,11 +25,22 @@
 
 .main-nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .main-nav__list {
   display: flex;
+  justify-content: flex-start;
   margin-left: 93px;
 }
 

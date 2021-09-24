@@ -1,5 +1,7 @@
 .legend {
-  max-width: 1600px;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
@@ -8,22 +10,62 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img-hero.jpg);
+    url(../images/legend-img/legend-img-mob-x1.jpg);
   padding: 200px 0px;
-  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/legend-img/legend-img-tab-x1.jpg);
+    max-width: 768px;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/legend-img/legend-img-desc-x1.jpg);
+    min-height: 600px;
+    max-width: 1600px;
+  }
 }
+
+.legend__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // max-width: 480px;
+  height: auto;
+  padding-top: 118px 60px;
+}
+
 .legend__title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  // width: 696px;
+
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .legend__button {
