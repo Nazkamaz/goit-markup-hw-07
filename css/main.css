@@ -278,6 +278,7 @@ a:hover, a:focus {
   .contacts {
     padding-left: 84px;
     padding-right: 15px;
+    align-items: flex-start;
   }
 }
 
@@ -477,10 +478,23 @@ a:hover, a:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: auto;
+  height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__close {
@@ -524,7 +538,7 @@ a:hover, a:focus {
 
 .modal__input {
   display: block;
-  width: 448px;
+  width: 100%;
   height: 40px;
   left: 576px;
   top: 382px;
