@@ -389,6 +389,8 @@ a:hover, a:focus {
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/legend-img/legend-img-mob-x1.jpg);
   padding: 200px 0px;
+  background-position: 50% 0;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -401,6 +403,7 @@ a:hover, a:focus {
   .legend {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/legend-img/legend-img-tab-x1.jpg);
     max-width: 768px;
+    height: 400px;
     background-size: cover;
   }
 }
@@ -683,11 +686,15 @@ a:hover, a:focus {
   margin: -1px;
 }
 
+.about-us {
+  width: 100%;
+}
+
 .about-us__card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -703,7 +710,7 @@ a:hover, a:focus {
 
 .about-us__title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -718,16 +725,51 @@ a:hover, a:focus {
   margin-top: 10px;
 }
 
-.about-us {
+.about-us__list {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__list {
+    max-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: nth-child(2n) 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us__list {
+    max-width: 1200px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .about-us__item {
-  width: 270px;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 450px;
+  margin-bottom: 30px;
 }
 
-.about-us__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .about-us__item {
+    width: calc((100% / 2) - 60px);
+    max-width: 354px;
+    min-height: 251px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us__item {
+    width: calc((100% / 4) - 90px);
+  }
 }
 
 .section__works {

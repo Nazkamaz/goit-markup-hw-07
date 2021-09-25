@@ -25,6 +25,7 @@
       ),
       url(../images/legend-img/legend-img-tab-x1.jpg);
     max-width: 768px;
+    height: 400px;
     background-size: cover;
   }
 
@@ -38,6 +39,8 @@
     min-height: 600px;
     max-width: 1600px;
   }
+  background-position: 50% 0;
+  margin-bottom: 60px;
 }
 
 .legend__container {
